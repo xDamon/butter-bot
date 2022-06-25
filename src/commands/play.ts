@@ -60,7 +60,7 @@ function createJukebox(member: GuildMember) {
         joinVoiceChannel({
             channelId: member.voice.channelId!,
             guildId: member.guild.id,
-            adapterCreator: member.guild.voiceAdapterCreator as DiscordGatewayAdapterCreator
+            adapterCreator: member.guild.voiceAdapterCreator
         }),
         createAudioPlayer({
             behaviors: {
